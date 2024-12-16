@@ -347,13 +347,7 @@ body {
     backdrop-filter: blur(5px); /* Blurs the background */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 576px) {
-    #contactModal {
-        width: 90%;
-        padding: 20px;
-    }
-}
+
 .what-we-do {
     display: flex;
     flex-direction: row;
@@ -463,9 +457,213 @@ body {
     margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+    #contactModal {
+        padding: 15px;
+        width: 90%;
+        max-width: 400px;
+    }
 
+    .form-control {
+        padding: 10px;
+    }
 
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) and (min-width: 769px) {
+    #contactModal {
+        padding: 18px;
+        width: 80%;
+        max-width: 450px;
+    }
+
+    .form-control {
+        padding: 11px;
+    }
+
+    button {
+        padding: 11px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens like tablets or mobile */
+    .mission-heading {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    .mission-description {
+        font-size: 16px; /* Adjust description text size */
+        text-align: center; /* Center text on mobile */
+        padding: 0 20px; /* Add some padding to prevent text from touching the edges */
+    }
+
+    .mission-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens like mobile */
+    .mission-heading {
+        font-size: 24px; /* Even smaller heading for mobile devices */
+    }
+
+    .mission-description {
+        font-size: 14px; /* Smaller font for description */
+        padding: 0 15px;
+    }
+}
+@media (max-width: 1024px) {
+    /* For tablet screens */
+    .section-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile screens */
+    .section-cards {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .main-sections h2 {
+        font-size: 28px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens */
+    .main-sections h2 {
+        font-size: 24px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card a {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .india-updates-heading {
+        font-size: 30px;
+    }
+
+    .update-content h5 {
+        font-size: 16px;
+    }
+
+    .view-all-button .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .india-updates-heading {
+        font-size: 28px;
+    }
+
+    .update-content h5 {
+        font-size: 14px;
+    }
+
+    .view-all-button .btn {
+        font-size: 12px;
+    }
+
+    /* Carousel controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .india-updates-heading {
+        font-size: 24px;
+    }
+
+    .update-content h5 {
+        font-size: 12px;
+    }
+
+    .view-all-button .btn {
+        font-size: 12px;
+    }
+
+    /* Carousel controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .title h2 {
+        font-size: 32px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .content-container {
+        padding: 20px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .description p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .content-container {
+        padding: 15px;
+    }
+}
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
     #contactModal {
