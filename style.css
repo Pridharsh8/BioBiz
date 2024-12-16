@@ -1,0 +1,573 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Background Image */
+.background {
+    position: relative;
+    background: url('bg.jpeg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    backdrop-filter: blur(4px);
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.bold {
+    color: #26b539;
+}
+
+.orange {
+    color: #ff7b00;
+}
+
+/* .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+} */
+
+/* .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #26b539;
+} */
+
+/* Heading Content */
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.content  h1{
+    margin-top: 50px;
+    font-size: 68px;
+    font-weight: bold;
+}
+.content .heading  h4{
+    font-size: 48px;
+    font-weight: bold;
+}
+.heading {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures text doesn't overflow */
+    display: inline-block; /* For proper animation control */
+}
+.typed-text {
+    display: inline-block; /* Needed for width animation */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Ensures hidden text is not visible */
+    border-right: 2px solid black; /* Simulates the typing cursor */
+    animation: typing 7s steps(40, end) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        border-color: rgb(246, 244, 244);
+    }
+    51%, 100% {
+        border-color: transparent;
+    }
+}
+
+/* Mission Section */
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #26b539;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.mission-description {
+    flex: 2;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Main Sections */
+.main-sections {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main-sections h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #26b539;
+    margin-bottom: 40px;
+}
+
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: contain; /* Ensures the image fits the card without distortion */
+    display: block;
+    margin: 0 auto; 
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #26b539;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #ff7b00;
+}
+/* India Updates Section */
+.india-updates-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.india-updates-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #26b539;
+    margin-bottom: 40px;
+}
+
+/* Carousel Styling */
+.update-content {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-content h5 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* View All Button */
+.view-all-button {
+    margin-top: 20px;
+}
+
+.view-all-button a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #26b539;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.view-all-button a:hover {
+    background-color: #1f9c2b;
+}
+/* Background blur effect */
+
+
+#contactModal {
+    display: none;
+    position: fixed;
+    top: -100%; /* Hidden initially */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centered on the screen */
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);/* Solid white background */
+    color: #333; /* Text color */
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    margin-top: 400px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow for pop-up effect */
+    z-index: 100; /* Above other content */
+    transition: top 0.5s ease-in-out;
+}
+
+#contactModal h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #090909; /* Consistent green theme */
+}
+
+#contactModal input, 
+#contactModal textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#contactModal input:focus, 
+#contactModal textarea:focus {
+    outline: none;
+    border-color: black; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(38, 181, 57, 0.5);
+}
+
+#contactModal button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+#closeModalBtn {
+    margin-top: 10px;
+    background-color: #ccc;
+    color: #333;
+    transition: background 0.3s;
+}
+
+
+
+/* Modal overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 99;
+    backdrop-filter: blur(5px); /* Blurs the background */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    #contactModal {
+        width: 90%;
+        padding: 20px;
+    }
+}
+.what-we-do {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+}
+.what-we-do:nth-child(odd) {
+    margin-top: 25px;
+    margin-right: 40px;
+    flex-direction: row-reverse; /* Reverse the order for even sections */
+}
+
+.content-container {
+    position: relative;
+    width: 50%;
+    max-width: 800px;
+    height: 350px;
+    background: url('plant.jpeg') no-repeat center center/cover; /* Replace with your image */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+}
+.content-container:nth-child(odd) {
+    position: relative;
+    width: 50%;
+    max-width: 800px;
+    height: 350px;
+    background: url('rain.jpeg') no-repeat center center/cover; /* Replace with your image */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+}
+/* Title Styling */
+.title {
+    position: absolute;
+    color: #fff;
+    font-size: 5.5rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Description Styling */
+.description {
+    position: absolute;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover Effects */
+.content-container:hover .title {
+    opacity: 0; /* Title fades out */
+}
+
+.content-container:hover .description {
+    opacity: 1; /* Description fades in */
+    transform: scale(1); /* Description scales to normal */
+}
+
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: #fff; /* White icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #f39c12; /* Highlight color on hover */
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+    #contactModal {
+        width: 90%; /* Full width with some padding */
+        padding: 20px;
+        top: 10%; /* Slightly off-center for mobile */
+    }
+
+    #contactModal input,
+    #contactModal textarea {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    #contactModal button {
+        padding: 12px;
+        font-size: 16px; /* Adjust button size for mobile */
+    }
+}
+
+/* Tablet View (min-width: 577px and max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    #contactModal {
+        width: 70%; /* Adjust to 70% width on tablets */
+        padding: 25px;
+        top: 15%;
+    }
+
+    #contactModal input,
+    #contactModal textarea {
+        font-size: 15px;
+    }
+
+    #contactModal button {
+        padding: 14px;
+        font-size: 17px;
+    }
+}
+
+/* Larger Screens (min-width: 769px) */
+@media (min-width: 769px) {
+    #contactModal {
+        width: 40%; /* Modal width adjusted for larger screens */
+        padding: 30px;
+        top: 50%; /* Centered on larger screens */
+    }
+
+    #contactModal input,
+    #contactModal textarea {
+        font-size: 16px;
+    }
+
+    #contactModal button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content .heading {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content .heading {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .what-we-do {
+        padding: 30px 15px;
+    }
+
+    .what-we-do .title h2 {
+        font-size: 1rem; /* Reduce title size */
+    }
+
+    .what-we-do .description p {
+        font-size: 1rem; /* Smaller paragraph font */
+    }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .what-we-do {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .what-we-do .title h2 {
+        font-size: 16px; /* Title becomes smaller */
+        margin-bottom: 10px;
+    }
+
+    .what-we-do .description p {
+        font-size: 0.5rem; /* Small paragraph text */
+        line-height: 1.4;
+    }
+}

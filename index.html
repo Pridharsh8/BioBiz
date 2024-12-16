@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>BioBiz - Sustainability</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="ab.css">
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <!-- Background Image -->
+    <div class="background">
+        <div class="blur"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="p1.jpeg" alt="BioBiz Logo" class="logo-img">
+            <span class="logo-text"><span class="bold">BioBiz</span> <span class="orange">India</span></span>
+        </div>
+        <ul class="nav-links">
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="ab.html" >About</a>
+                <a href="op.html">Opportunities</a>
+                <button id="contactBtn" class="btn btn-primary">Contact Us</button>
+            </nav>
+            
+            
+            
+        </ul>
+        
+    </nav>
+    
+
+
+<!-- Modal Overlay -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<div id="contactModal">
+    <h3>Contact Us</h3>
+    <form id="contactForm">
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required><br>
+        <input type="email" id="email" class="form-control" placeholder="Your Email" required><br>
+        <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea><br>
+        <button type="submit" class="btn btn-success">Send</button>
+    </form>
+    <button id="closeModalBtn" class="btn btn-secondary">Close</button>
+</div>
+
+    <!-- Heading Content -->
+    <div class="content">
+        <h1>WELCOME TO BIOBIZ INDIA</h1>
+        <h4 class="heading">
+            <span class="typed-text">Accelerating india's sustainability through biomass</span>
+        </h4>
+    </div>
+
+    <!-- Our Mission Section -->
+    <div class="mission-container">
+        <div  data-aos="fade-down-right" class="mission-heading">
+            OUR MISSION
+        </div>
+        <div data-aos="fade-down-left"  class="mission-description">
+            At BioBiz, we are keen to capitalize on India’s rich biodiversity and the availability of large amounts of biomass residues to develop a sustainable bio-economy and attractive business opportunities for diverse stakeholders – farmers, rural stakeholders, end-use industries, entrepreneurs/startups, and financial investors.<br><br>
+            As part of a leading climate tech consulting firm, we will provide critical assistance with market intelligence, data-driven analyses, professional networking, and opportunities for relevant stakeholders to get effective visibility.
+        </div>
+    </div>
+    <!-- Main Sections -->
+<div class="main-sections">
+    <h2>Main Sections</h2>
+    <div class="section-cards">
+        <div data-aos="zoom-in-down" class="card">
+            <img src="p6.jpeg" alt="Opportunities Logo" class="card-icon">
+            <h3>Opportunities</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div data-aos="zoom-in-down" class="card">
+            <img src="p5.jpeg" alt="Consulting Logo" class="card-icon">
+            <h3>Consulting</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div data-aos="zoom-in-down" class="card">
+            <img src="p2.jpeg" alt="Insights Logo" class="card-icon">
+            <h3>Insights</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div data-aos="zoom-in-down" class="card">
+            <img src="p4.jpeg" alt="Innovation Insights Logo" class="card-icon">
+            <h3>Innovation Insights</h3>
+            <a href="#">Learn More</a>
+        </div>
+        <div data-aos="zoom-in-down" class="card">
+            <img src="p3.jpeg" alt="Biomass Residue Intelligence Logo" class="card-icon">
+            <h3>Biomass Residue Intelligence</h3>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</div>
+<div class="india-updates-container">
+    <h2 class="india-updates-heading">India Updates</h2>
+
+    <!-- Bootstrap Carousel -->
+    <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- News Item 1 -->
+            <div class="carousel-item active">
+                <div class="update-content">
+                    <h5>Ethanol Plant by Kisan Cooperative Sugar Mill in Pilibhit</h5>
+                </div>
+            </div>
+            <!-- News Item 2 -->
+            <div class="carousel-item">
+                <div class="update-content">
+                    <h5>World’s Largest Sustainable Aviation Fuel Plants By TruAlt</h5>
+                </div>
+            </div>
+            <!-- News Item 3 -->
+            <div class="carousel-item">
+                <div class="update-content">
+                    <h5>Biofuel production from Seaweed Biomass: HPCL partners with Sea6 Energy</h5>
+                </div>
+            </div>
+            <!-- News Item 4 -->
+            <div class="carousel-item">
+                <div class="update-content">
+                    <h5>Green Hydrogen Plant in Baddi: Oil India and Himachal Pradesh Power Corporation partner</h5>
+                </div>
+            </div>
+            <!-- News Item 5 -->
+            <div class="carousel-item">
+                <div class="update-content">
+                    <h5>Bio-CNG Plants in 2 Cow Shelters by Greater Noida Authority</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- View All Button -->
+    <div class="view-all-button">
+        <a href="all-news.html" class="btn btn-primary">View All</a>
+    </div>
+</div>
+<section data-aos="flip-left" class="what-we-do">
+    <div class="content-container">
+        <!-- Title -->
+        <div class="title" id="title">
+            <h2>WHAT DO WE DO?</h2>
+        </div>
+        <!-- Description -->
+        <div class="description" id="description">
+            <p>
+                At BioBiz, we are at the forefront of revolutionizing the way businesses approach sustainable development through the utilization of Indian biomass. Our expert team leverages advanced analytics, comprehensive research, and innovative technologies to provide tailored solutions for integrating biomass into your business strategy.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-aos="flip-left" class="what-we-do">
+    <div class="content-container">
+        <!-- Title -->
+        <div class="title" id="title">
+            <h2>WHO ARE WE?</h2>
+        </div>
+        <!-- Description -->
+        <div class="description" id="description">
+            <p>
+                With an experience of over 15 years, BioBiz is a dynamic team of industry experts, environmental enthusiasts, and visionary professionals dedicated to catalyzing positive change. With a passion for sustainable growth, we bring together a diverse range of skills and perspectives to provide you with unparalleled expertise in the field of Indian biomass.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p class="copyright">Copyright &copy; 2024 BioBiz. All rights reserved.</p>
+    </footer>
+
+
+<!-- Contact Form Modal -->
+<script>
+   $(document).ready(function() {
+    // Show Modal and Blur Background
+    $('#contactBtn').click(function() {
+        $('#contactModal').show().css('top', '0'); // Make the modal slide in from the top
+        $('#modalOverlay').show();
+        $('body').addClass('blur-background');
+    });
+
+    // Close Modal and Restore Background
+    $('#closeModalBtn').click(function() {
+        $('#contactModal').hide().css('top', '-100%'); // Hide the modal and slide it out
+        $('#modalOverlay').hide();
+        $('body').removeClass('blur-background');
+    });
+
+    // Optional: Handle form submission
+    $('#contactForm').submit(function(e) {
+        e.preventDefault(); // Prevent form from reloading the page
+        alert('Message Sent');
+        $('#contactModal').hide().css('top', '-100%'); // Hide the modal and slide it out
+        $('#modalOverlay').hide();
+        $('body').removeClass('blur-background');
+    });
+});
+
+</script>
+    
+
+
+</body>
+</html>
